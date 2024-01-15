@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-secondary text-[#4B5D68] bg-gradient-to-b from-[#F6FAFD] to-[#FFFFFF] bg-no-repeat;
+    }
+    h1, h2, h3, h4, h5, h6{
+        @apply font-primary text-[#4b5d68];
+    }
+    a{
+        @apply font-semibold text-[#4B5D68] hover:text-[#fbbf24] transition;
+    }
+    .btn{
+        @apply text-white text-lg h-[60px] px-[30px] rounded-full transition;
+    }
+    .btn-primary{
+        @apply bg-[#9C69E2] hover:bg-[#9059DB];
+    }
+    .btn-secondary{
+        @apply bg-[#F063B8] hover:bg-[#E350A9];
+    }
+    .btn-quaternary{
+        @apply bg-[#CFCFCF] text-base font-bold text-[#212353] hover:text-[#FFFFFF] drop-shadow-[#212353] hover:bg-[#9059DB];
+    }
+    .h1{
+        @apply text-[40px] xl:text-[80px] font-bold leading-[1] ;
+    }
+    .h2{
+        @apply text-[40px] font-bold leading-tight;
+    }
+    .h3{
+        @apply text-[24px];
+    }
+    .lead{
+        @apply text-lg font-secondary text-[#4B5D68] font-medium leading-relaxed;
+    }
+}
