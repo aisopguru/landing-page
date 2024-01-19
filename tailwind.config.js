@@ -23,7 +23,11 @@ export default {
       xl: '1170px'
     },
     extend: {
-
+      backgroundImage: theme => ({
+        'footer-texture': "url('/src/assets/world.png')",
+        'world': "url('/src/assets/www.jpg')",
+        'dots': "url('/src/assets/dots.png')",
+      })
     },
   },
   plugins: [],

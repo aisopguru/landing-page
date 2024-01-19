@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base{
     body{
-        @apply font-secondary text-[#4B5D68] bg-gradient-to-b from-[#F6FAFD] to-[#FFFFFF] bg-no-repeat;
+        @apply font-secondary text-[#4B5D68] bg-no-repeat;
     }
     h1, h2, h3, h4, h5, h6{
         @apply font-primary text-[#4b5d68];
     }
-    a{
-        @apply font-semibold text-[#4B5D68] hover:text-[#fbbf24] transition;
+    .navLink{
+        @apply font-semibold text-lg text-[#365b65] hover:text-orange-500 transition;
+    }
+    .navLinkMobile{
+        @apply font-semibold text-lg md:text-2xl text-white hover:text-orange-500 pb-2 md:pb-8 transition;
+    }
+    .link{
+        @apply font-semibold text-lg text-[#365b65] hover:text-orange-500 transition;
     }
     .btn{
         @apply text-white text-lg h-[60px] px-[30px] rounded-full transition;
@@ -22,7 +29,7 @@
         @apply bg-[#F063B8] hover:bg-[#E350A9];
     }
     .btn-quaternary{
-        @apply bg-[#CFCFCF] text-base font-bold text-[#212353] hover:text-[#FFFFFF] drop-shadow-[#212353] hover:bg-[#9059DB];
+        @apply bg-orange-300 font-bold text-black hover:text-[#FFFFFF] drop-shadow-[#212353] hover:bg-[#9059DB];
     }
     .h1{
         @apply text-[40px] xl:text-[80px] font-bold leading-[1] ;

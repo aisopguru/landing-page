@@ -7,7 +7,7 @@ const Hero = () => {
     // Destructure hero data
     const {title, subtitle,features, btnText, image} = heroData
     return (
-        <section className='lg:h-screen'>
+        <section name='Home' className='h-screen mt-20'>
             <div className='container mx-auto h-full relative'>
                 <div className='flex flex-col xl:flex-row items-center h-full md:py-24'>
                     {/*  Text  */}
@@ -22,9 +22,9 @@ const Hero = () => {
                     {/*  Images  */}
                     <div className='xl:absolute xl:-right-12 xl:bottom-24' data-aos='fade-up' data-aos-delay='700'>
                         <img src={image} alt="" height='1200px' width='700px'/>
-                        <div className="absolute xl:-my-[460px] flex justify-center items-center">
-                            <p className='xl:max-w-[600px] mb-6 lg:mb-12 text-[#4b5d68] font-bold text-lg' data-aos='fade-down'
-                               data-aos-delay='500'>
+                        <div className="absolute xl:-my-[455px] xl:-mx-[-30px] flex justify-center items-center">
+                            <p className='xl:max-w-[600px] mb-6 lg:mb-12 text-[#223e42]/[75%] selection:bg-amber-200 font-bold text-lg' data-aos='zoom-in'
+                               data-aos-delay='800'>
                                 <Typewriter
                                     options={{
                                         strings: features,
@@ -38,19 +38,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                {/*<div className='flex gap-x-5'>*/}
-                {/*    {*/}
-                {/*        features.map((item, index) => {*/}
-                {/*            return (*/}
-                {/*                <a href="#" key={index}*/}
-                {/*                   className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-emerald-800 dark:bg-emerald-700">*/}
-                {/*                    <p className="mb-2 tracking-tight text-gray-900 dark:text-white">{item}</p>*/}
-                {/*                </a>*/}
-                {/*                // bg-[#9C69E2]*/}
-                {/*            )*/}
-                {/*        })*/}
-                {/*    }*/}
-                {/*</div>*/}
             </div>
         </section>
     );

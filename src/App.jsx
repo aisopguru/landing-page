@@ -3,10 +3,10 @@ import Hero from "./components/Hero.jsx";
 import Choice from "./components/Choice.jsx";
 import Procedure from "./components/Procedure.jsx";
 import Consultations from "./components/Consultations.jsx";
-import CtaSection from "./components/CtaSection.jsx";
 import Prices from "./components/Prices.jsx";
-
+import CtaSection from "./components/CtaSection.jsx";
 import Footer from "./components/Footer.jsx";
+
 // Import script, and styles AOS:
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +25,7 @@ const App = () => {
             <Choice />
             <Procedure />
             <Consultations />
-            {/*<Prices />*/}
+            <Prices />
             <CtaSection />
             <Footer />
         </div>

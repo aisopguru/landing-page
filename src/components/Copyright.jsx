@@ -10,8 +10,8 @@ const Copyright = () => {
                     <div className='text-sm font-light italic max-w-[360px]'>{text}</div>
                 {/*  Icon  */}
                     <div className='-order-1 md:order-1'>
-                        <div className='w-[60px] h-[60px] bg-[#212353]/20 flex items-center justify-center rounded-full cursor-pointer group'>
-                            <div className='text-3xl text-[#9C69E2] group-hover:scale-110 transition-all'>{icon}</div>
+                        <div className='w-[60px] h-[60px] bg-orange-300/40 flex items-center justify-center rounded-full cursor-pointer group'>
+                            <div className='text-3xl text-orange-300 group-hover:scale-110 transition-all'>{icon}</div>
                         </div>
                     </div>
                 </div>

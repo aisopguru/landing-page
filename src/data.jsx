@@ -1,10 +1,11 @@
-import HeroImage from '../src/assets/hero.jpg'
-import ChoiceImage from '../src/assets/why_us.jpg'
-import SignUp from '../src/assets/signup.jpg'
-import Steps from '../src/assets/steps.jpg'
-import Review from '../src/assets/review.jpg'
-import Submit from '../src/assets/submit.jpg'
-import Consultation from '../src/assets/consultation.jpg'
+import HeroImage from '../src/assets/hero.png'
+import ChoiceImage from '../src/assets/why_us.png'
+import SignUp from '../src/assets/signup.png'
+import Steps from '../src/assets/steps.png'
+import Review from '../src/assets/review.png'
+import Submit from '../src/assets/submit.png'
+import Consultation from '../src/assets/consultation.png'
+import World from '../src/assets/world.png'
 
 import Logo from '../src/assets/logo.png'
 import {FaFacebook, FaHome, FaInstagram, FaLinkedin, FaMobile, FaYoutube} from "react-icons/fa";
@@ -13,20 +14,39 @@ import {MdEmail} from "react-icons/md";
 
 export const navigationData =  [
     {
-        name: 'Why Us',
-        href: '#',
+        name: 'Home',
+        duration: 500,
+        offset: 0
     },
     {
-        name: 'Procedure',
-        href: '#',
+        name: 'About',
+        duration: 500,
+        offset: -200
     },
     {
-        name: 'Services',
-        href: '#',
+        name: 'Platform',
+        duration: 500,
+        offset: -50
     },
     {
-        name: 'Signup',
-        href: '#',
+        name: 'Consultant',
+        duration: 500,
+        offset: -100
+    },
+    {
+        name: 'Pricing',
+        duration: 500,
+        offset: -50
+    },
+    {
+        name: 'Demo',
+        duration: 500,
+        offset: -100
+    },
+    {
+        name: 'Contact',
+        duration: 500,
+        offset: -50
     },
 ];
 
@@ -86,7 +106,7 @@ export const procedureData =  {
         },
         {
             image: Submit,
-            title: 'Download & Submit',
+            title: 'Download SOP',
             subtitle: 'Download your professionally crafted SOP, ready for submission. Take control and submit it with confidence',
             position: 'fade-down',
             delay: 600
@@ -108,6 +128,37 @@ export const consultData =  {
         },
     ],
     image: Consultation,
+};
+
+export const pricingData =  {
+    title: 'Pricing',
+    subtitle: 'Find A Plan That Fits Your Goals',
+    info: [
+        {
+            name: 'standard',
+            price: '$40',
+            type: 'Automated SOP',
+            supports: ['Only AI will create your SOP (no support from experts)'],
+            features: [
+                'Supported File Types: Word / PDF',
+                'Easy to Download'
+            ]
+        },
+        {
+            name: 'PREMIUM',
+            price: '$120',
+            type: 'Personalized AI Powered SOP',
+            supports: [
+                'Our SOP expert will review your SOP',
+                'Ask questions directly to the experts',
+                '5 times review and modification by an expert',
+            ],
+            features: [
+                'Supported File Types: Word / PDF',
+                'Easy to Download'
+            ]
+        },
+    ],
 };
 
 export const ctaData =  {
@@ -194,8 +245,8 @@ export const footerData =  {
             icon: <FaFacebook />,
             href: '#'
         },
-
-    ]
+    ],
+    image: World,
 };
 
 export const copyrightData = {
